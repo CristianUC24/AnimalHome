@@ -84,10 +84,18 @@ public class PanelRG extends JPanel {
     public void setDegrade(int degrade) {
         this.degrade = degrade;
     }
-    
-    
-    
 
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+    
+    
+    
+    private int a = 01;
     private int redonarribaizquierda = 20;
     private int redonarribaderrecha = 20;
     private int redonabajoizquierda = 20;
