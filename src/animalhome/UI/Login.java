@@ -35,6 +35,7 @@ public class Login extends javax.swing.JFrame {
         panelRG1 = new animalhome.metodos.PanelRG();
         sombra2 = new animalhome.metodos.Sombra();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -86,6 +87,8 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setToolTipText("");
 
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout sombra1Layout = new javax.swing.GroupLayout(sombra1);
         sombra1.setLayout(sombra1Layout);
         sombra1Layout.setHorizontalGroup(
@@ -100,7 +103,9 @@ public class Login extends javax.swing.JFrame {
                         .addGap(54, 54, 54))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sombra1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1)
+                        .addGroup(sombra1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
                         .addGap(31, 31, 31))))
         );
         sombra1Layout.setVerticalGroup(
@@ -110,8 +115,10 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(panelRG1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(20, 20, 20))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sombra1Layout.createSequentialGroup()
-                .addContainerGap(45, Short.MAX_VALUE)
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(sombra2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
@@ -169,6 +176,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private animalhome.metodos.PanelRG panelRG1;
