@@ -18,6 +18,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setBackground(new Color(0, 0, 0, 0));
+        this.setUndecorated(true);
     }
 
     /**
@@ -34,6 +35,7 @@ public class Login extends javax.swing.JFrame {
         sombra1 = new animalhome.metodos.Sombra();
         panelRG1 = new animalhome.metodos.PanelRG();
         imagenRescala1 = new animalhome.metodos.ImagenRescala();
+        jLabel2 = new javax.swing.JLabel();
         sombra2 = new animalhome.metodos.Sombra();
         jLabel1 = new javax.swing.JLabel();
 
@@ -60,20 +62,31 @@ public class Login extends javax.swing.JFrame {
 
         imagenRescala1.setImage(new javax.swing.ImageIcon(getClass().getResource("/ImagenesLogin/AH2.png"))); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Animal Home");
+
         javax.swing.GroupLayout panelRG1Layout = new javax.swing.GroupLayout(panelRG1);
         panelRG1.setLayout(panelRG1Layout);
         panelRG1Layout.setHorizontalGroup(
             panelRG1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRG1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(imagenRescala1, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
+                .addComponent(imagenRescala1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(panelRG1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         panelRG1Layout.setVerticalGroup(
             panelRG1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRG1Layout.createSequentialGroup()
                 .addGap(66, 66, 66)
                 .addComponent(imagenRescala1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -179,6 +192,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private animalhome.metodos.ImagenRescala imagenRescala1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private animalhome.metodos.PanelRG panelRG1;
