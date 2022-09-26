@@ -33,6 +33,7 @@ public class Login extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         sombra1 = new animalhome.metodos.Sombra();
         panelRG1 = new animalhome.metodos.PanelRG();
+        imagenRescala1 = new animalhome.metodos.ImagenRescala();
         sombra2 = new animalhome.metodos.Sombra();
         jLabel1 = new javax.swing.JLabel();
 
@@ -57,15 +58,23 @@ public class Login extends javax.swing.JFrame {
         panelRG1.setRedonarribaderrecha(0);
         panelRG1.setRedonarribaizquierda(30);
 
+        imagenRescala1.setImage(new javax.swing.ImageIcon(getClass().getResource("/ImagenesLogin/AH2.png"))); // NOI18N
+
         javax.swing.GroupLayout panelRG1Layout = new javax.swing.GroupLayout(panelRG1);
         panelRG1.setLayout(panelRG1Layout);
         panelRG1Layout.setHorizontalGroup(
             panelRG1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 295, Short.MAX_VALUE)
+            .addGroup(panelRG1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(imagenRescala1, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelRG1Layout.setVerticalGroup(
             panelRG1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRG1Layout.createSequentialGroup()
+                .addGap(66, 66, 66)
+                .addComponent(imagenRescala1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         sombra2.setBackground(new java.awt.Color(255, 255, 255));
@@ -168,6 +177,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private animalhome.metodos.ImagenRescala imagenRescala1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
