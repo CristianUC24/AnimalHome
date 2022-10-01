@@ -69,20 +69,20 @@ public class PanelRG extends JPanel {
         this.color2 = color2;
     }
 
-    public int getInclinacion() {
-        return inclinacion;
+    public int getPunto1Y() {
+        return Punto1Y;
     }
 
-    public void setInclinacion(int inclinacion) {
-        this.inclinacion = inclinacion;
+    public void setPunto1Y(int Punto1Y) {
+        this.Punto1Y = Punto1Y;
     }
 
-    public int getDegrade() {
-        return degrade;
+    public int getPunto1X() {
+        return Punto1X;
     }
 
-    public void setDegrade(int degrade) {
-        this.degrade = degrade;
+    public void setPunto1X(int Punto1X) {
+        this.Punto1X = Punto1X;
     }
 
     public int getA() {
@@ -92,6 +92,24 @@ public class PanelRG extends JPanel {
     public void setA(int a) {
         this.a = a;
     }
+
+    public int getPunto2Y() {
+        return Punto2Y;
+    }
+
+    public void setPunto2Y(int Punto2Y) {
+        this.Punto2Y = Punto2Y;
+    }
+
+    public int getPunto2X() {
+        return Punto2X;
+    }
+
+    public void setPunto2X(int Punto2X) {
+        this.Punto2X = Punto2X;
+    }
+    
+    
     
     
     
@@ -102,8 +120,10 @@ public class PanelRG extends JPanel {
     private int redonabajoderrecha = 20;
     private Color color1 = Color.decode("#0099F7");
     private Color color2 = Color.decode("#F11712");
-    private int inclinacion = 0;
-    private int degrade = 0;
+    private int Punto1Y = 0;
+    private int Punto1X = 0;
+     private int Punto2Y = HEIGHT;
+    private int Punto2X = WIDTH;
     
     public PanelRG() {
         setOpaque(false);
@@ -113,7 +133,7 @@ public class PanelRG extends JPanel {
     protected void paintComponent(Graphics grphcs) {
         Graphics2D g2 = (Graphics2D) grphcs.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        GradientPaint gra = new GradientPaint(0, 0+inclinacion, color1, getWidth()-degrade, getHeight()-inclinacion, color2);
+        GradientPaint gra = new GradientPaint(Punto1X, Punto1Y, color1, Punto2X, getHeight(), color2);
         g2.setPaint(gra);
         Area area = new Area(createRoundTopLeft());
         if (redonarribaderrecha > 0) {
@@ -128,6 +148,7 @@ public class PanelRG extends JPanel {
         g2.fill(area);
         g2.dispose();
         super.paintComponent(grphcs);
+        repaint();
     }
 
     private Shape createRoundTopLeft() {
