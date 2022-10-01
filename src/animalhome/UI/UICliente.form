@@ -488,10 +488,10 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="botonMantenerMod1" alignment="1" min="-2" pref="208" max="-2" attributes="0"/>
-                          <Component id="botonMantenerMod2" alignment="1" min="-2" pref="208" max="-2" attributes="0"/>
-                          <Component id="botonMantenerMod3" alignment="1" min="-2" pref="208" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="botonMantenerMod1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="botonMantenerMod2" alignment="1" pref="221" max="32767" attributes="0"/>
+                          <Component id="botonMantenerMod3" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -514,7 +514,7 @@
                       <Component id="botonMantenerMod2" min="-2" pref="66" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="botonMantenerMod3" min="-2" pref="66" max="-2" attributes="0"/>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                      <EmptySpace pref="87" max="32767" attributes="0"/>
                       <Component id="botonMod1" min="-2" pref="51" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
@@ -643,12 +643,12 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="imagenClick" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ImagenesUiCliente/icons8_shop_43px_3.png"/>
+                  <Image iconType="3" name="/ImagenesUiCliente/icons8_animal_shelter_43px_1.png"/>
                 </Property>
                 <Property name="imagenInicio" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ImagenesUiCliente/icons8_shop_43px.png"/>
+                  <Image iconType="3" name="/ImagenesUiCliente/icons8_animal_shelter_43px.png"/>
                 </Property>
-                <Property name="label" type="java.lang.String" value="Tienda"/>
+                <Property name="label" type="java.lang.String" value="Mascotas"/>
                 <Property name="letra" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
@@ -677,10 +677,10 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="imagenClick" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ImagenesUiCliente/icons8_shop_43px_3.png"/>
+                  <Image iconType="3" name="/ImagenesUiCliente/icons8_veterinarian_43px_5.png"/>
                 </Property>
                 <Property name="imagenInicio" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ImagenesUiCliente/icons8_shop_43px.png"/>
+                  <Image iconType="3" name="/ImagenesUiCliente/icons8_veterinarian_43px_4.png"/>
                 </Property>
                 <Property name="label" type="java.lang.String" value="Tienda"/>
                 <Property name="letra" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -714,7 +714,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="464" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="533" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>

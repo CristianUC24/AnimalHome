@@ -386,9 +386,9 @@ public final class UICliente extends javax.swing.JFrame {
         botonMantenerMod2.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         botonMantenerMod2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         botonMantenerMod2.setHover(new java.awt.Color(255, 255, 255));
-        botonMantenerMod2.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_shop_43px_3.png"))); // NOI18N
-        botonMantenerMod2.setImagenInicio(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_shop_43px.png"))); // NOI18N
-        botonMantenerMod2.setLabel("Tienda");
+        botonMantenerMod2.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_animal_shelter_43px_1.png"))); // NOI18N
+        botonMantenerMod2.setImagenInicio(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_animal_shelter_43px.png"))); // NOI18N
+        botonMantenerMod2.setLabel("Mascotas");
         botonMantenerMod2.setLetra(new java.awt.Color(255, 255, 255));
         botonMantenerMod2.setRedonabajoderrecha(0);
         botonMantenerMod2.setRedonabajoizquierda(30);
@@ -401,8 +401,8 @@ public final class UICliente extends javax.swing.JFrame {
         botonMantenerMod3.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         botonMantenerMod3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         botonMantenerMod3.setHover(new java.awt.Color(255, 255, 255));
-        botonMantenerMod3.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_shop_43px_3.png"))); // NOI18N
-        botonMantenerMod3.setImagenInicio(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_shop_43px.png"))); // NOI18N
+        botonMantenerMod3.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_veterinarian_43px_5.png"))); // NOI18N
+        botonMantenerMod3.setImagenInicio(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_veterinarian_43px_4.png"))); // NOI18N
         botonMantenerMod3.setLabel("Tienda");
         botonMantenerMod3.setLetra(new java.awt.Color(255, 255, 255));
         botonMantenerMod3.setRedonabajoderrecha(0);
@@ -427,10 +427,10 @@ public final class UICliente extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonMantenerMod1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonMantenerMod2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonMantenerMod3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(botonMantenerMod1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botonMantenerMod2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+                    .addComponent(botonMantenerMod3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -448,7 +448,7 @@ public final class UICliente extends javax.swing.JFrame {
                 .addComponent(botonMantenerMod2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(botonMantenerMod3, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addComponent(botonMod1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
@@ -465,7 +465,7 @@ public final class UICliente extends javax.swing.JFrame {
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 464, Short.MAX_VALUE)
+            .addGap(0, 533, Short.MAX_VALUE)
         );
 
         jPanel1.add(jPanel7, java.awt.BorderLayout.CENTER);
@@ -553,13 +553,7 @@ Color Unselec = new Color(51,102,255);    Color E = new Color(32,76,209);
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UICliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UICliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UICliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(UICliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
@@ -570,12 +564,19 @@ Color Unselec = new Color(51,102,255);    Color E = new Color(32,76,209);
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new UICliente().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new UICliente().setVisible(true);
         });
     }
 
