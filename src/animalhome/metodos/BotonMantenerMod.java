@@ -245,7 +245,7 @@ public class BotonMantenerMod extends JToggleButton {
         }
 
         if (isSelected()) {
-            g2.setColor(hover);
+            g2.setColor(fondo);
             
         }
         {

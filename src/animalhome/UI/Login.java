@@ -605,7 +605,6 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(795, 469));
         setMinimumSize(new java.awt.Dimension(795, 469));
         setUndecorated(true);
 
@@ -715,15 +714,17 @@ public class Login extends javax.swing.JFrame {
             .addGroup(sombra1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(panelRG12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
                 .addGroup(sombra1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sombra2, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
                     .addGroup(sombra1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(42, 42, 42)
+                        .addComponent(sombra2, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+                        .addGap(43, 43, 43))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sombra1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnMinus)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnExit)))
-                .addGap(43, 43, 43))
+                        .addComponent(btnExit)
+                        .addGap(26, 26, 26))))
         );
         sombra1Layout.setVerticalGroup(
             sombra1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
