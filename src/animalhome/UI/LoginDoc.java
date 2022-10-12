@@ -5,7 +5,7 @@
 package animalhome.UI;
 
 import java.awt.Color;
-
+import animalhome.metodos.*;
 /**
  *
  * @author Cristian Franco
@@ -18,6 +18,13 @@ public class LoginDoc extends javax.swing.JFrame {
     public LoginDoc() {
         initComponents();
         this.setBackground(new Color(0,0,0,0));
+        PlaceHolder();
+    }
+    
+    public void PlaceHolder(){
+        TextPrompt ph ;
+        ph = new TextPrompt("Contraseña", txtContraseña);
+        ph = new TextPrompt("Usuario", txtUsuario);
     }
 
     /**
@@ -51,6 +58,16 @@ public class LoginDoc extends javax.swing.JFrame {
         sombra1.setBackground(new java.awt.Color(255, 255, 255));
         sombra1.setBorde(25);
         sombra1.setShadowType(animalhome.metodos.Sombra.ShadowType.BOT);
+        sombra1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                sombra1MouseDragged(evt);
+            }
+        });
+        sombra1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                sombra1MousePressed(evt);
+            }
+        });
 
         panelRG2.setColor1(new java.awt.Color(0, 0, 153));
         panelRG2.setColor2(new java.awt.Color(0, 0, 255));
@@ -59,7 +76,7 @@ public class LoginDoc extends javax.swing.JFrame {
 
         imagenRescala1.setImage(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/AH3.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("Animal Home");
 
@@ -255,6 +272,16 @@ public class LoginDoc extends javax.swing.JFrame {
     private void btnMinusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMinusMouseClicked
         setExtendedState(ICONIFIED);
     }//GEN-LAST:event_btnMinusMouseClicked
+    int xx, xy;
+    private void sombra1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sombra1MousePressed
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_sombra1MousePressed
+
+    private void sombra1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sombra1MouseDragged
+       int x = evt.getXOnScreen(), y = evt.getYOnScreen();
+       this.setLocation(x-xx, y-xy);
+    }//GEN-LAST:event_sombra1MouseDragged
 
     /**
      * @param args the command line arguments

@@ -151,8 +151,8 @@ public final class UICliente extends javax.swing.JFrame {
                 .addContainerGap(761, Short.MAX_VALUE)
                 .addComponent(imagenRescala1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jLabel1)
+                .addGap(38, 38, 38))
         );
         panelRG1Layout.setVerticalGroup(
             panelRG1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,7 +212,7 @@ public final class UICliente extends javax.swing.JFrame {
         btnTienda.setSelected(true);
         btnTienda.setColorfont(new java.awt.Color(0, 0, 0));
         btnTienda.setFondo(new java.awt.Color(9, 43, 225));
-        btnTienda.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        btnTienda.setFont(new java.awt.Font("Poppins", 0, 25)); // NOI18N
         btnTienda.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnTienda.setHover(new java.awt.Color(255, 255, 255));
         btnTienda.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_shop_43px_3.png"))); // NOI18N
@@ -233,7 +233,7 @@ public final class UICliente extends javax.swing.JFrame {
         buttonGroup1.add(btnMascotas);
         btnMascotas.setColorfont(new java.awt.Color(0, 0, 0));
         btnMascotas.setFondo(new java.awt.Color(9, 43, 225));
-        btnMascotas.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        btnMascotas.setFont(new java.awt.Font("Poppins", 0, 25)); // NOI18N
         btnMascotas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnMascotas.setHover(new java.awt.Color(255, 255, 255));
         btnMascotas.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_animal_shelter_43px_1.png"))); // NOI18N
@@ -255,7 +255,7 @@ public final class UICliente extends javax.swing.JFrame {
         btnCita.setText("Cita");
         btnCita.setColorfont(new java.awt.Color(0, 0, 0));
         btnCita.setFondo(new java.awt.Color(9, 43, 225));
-        btnCita.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        btnCita.setFont(new java.awt.Font("Poppins", 0, 25)); // NOI18N
         btnCita.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnCita.setHover(new java.awt.Color(255, 255, 255));
         btnCita.setImagenClick(new javax.swing.ImageIcon(getClass().getResource("/ImagenesUiCliente/icons8_veterinarian_43px_5.png"))); // NOI18N
@@ -291,7 +291,7 @@ public final class UICliente extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnTienda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMascotas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+                    .addComponent(btnMascotas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCita, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
@@ -310,7 +310,7 @@ public final class UICliente extends javax.swing.JFrame {
                 .addComponent(btnMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCita, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(botonMod1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
