@@ -12,7 +12,7 @@ import animalhome.metodos.*;
  * @author Cristian Franco
  */
 public class Login extends javax.swing.JFrame {
-
+    //magia
     /**
      * Creates new form Login
      */
